@@ -1,0 +1,38 @@
+{
+  "name": "promoapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon src/index.js --watch src --exec babel-node",
+    "build:prod": "babel src -s -D -d build",
+    "start:prod": "npm run build:prod && node build/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.3.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.6.3",
+    "@shelf/jest-mongodb": "^1.1.3",
+    "eslint": "^6.6.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4"
+  }
+}

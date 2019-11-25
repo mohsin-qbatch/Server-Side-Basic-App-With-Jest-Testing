@@ -1,0 +1,10 @@
+import './ads';
+import './categories';
+import './consumers';
+import './malls';
+import './merchants';
+import './promotions';
+import './staff';
+import './stores';
+import './storegroup';
+import './users';
